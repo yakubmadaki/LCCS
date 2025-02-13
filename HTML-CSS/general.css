@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #23282c;
+    text-align: left;
+    background-color: #e4e5e6;
+    display: flex;
+}
+
+.header-nav{
+    background-color: #ffffff;
+    border: 1px solid #c8ced3;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-body{
+    display: flex;
+    margin-top: 55px;
+}
+
+.sidebar{
+    background-color: #2f353a;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 230px;
+}
+
+.sidebar span{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    
+}
+
+.lccs-logo{
+   height: 50px;
+   margin-left: 40px;
+}
+
+.menu{
+    height: 20px;
+    margin-left: 70px;
+    opacity: 50%;
+}
+
+.menu:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+.home{
+    height: 20px;
+    margin-left: 40px;
+    opacity: 50%;
+}
+
+.home:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.bell{
+    height: 20px; 
+    margin-right: 30px;
+    opacity: 50%;
+}
+
+.bell:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.profile{
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.dashboard-nav{
+    margin-left: 40px;
+    opacity: 50%;
+}
+
+.dashboard-nav:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.sidebar-link{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-link:hover{
+    background-color: #20a8d8;
+    cursor: pointer;
+}
+
+.sidebar-link img{
+    height: 15px;
+    margin-left: 20px;
+    filter: invert(64%) sepia(2%) saturate(1390%) hue-rotate(163deg) brightness(79%) contrast(87%);
+}
+
+.sidebar-link div{
+    margin-left: 10px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item-dashboard{
+    text-decoration: none;
+    color: black;
+}
+
+
+.sidebar {
+    /* Default styles for expanded sidebar */
+    width: 230px;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+    /* Styles for collapsed sidebar */
+    width: 80px;
+    transition: width 0.3s ease-in-out;
+    align-items: center;
+}
+
+.sidebar .sidebar-link {
+    /* Hide text when collapsed */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar.collapsed .sidebar-link div {
+    display: none;
+
+}
+
+.sidebar.collapsed .sidebar-link img{
+    height: 20px;
+    margin-left:0;
+    padding-left: 40%;
+  
+}
+
+.sidebar.collapsed .nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar span{
+    padding-right: 10px;
+    font-size: 80%;
+    font-weight: 700;
+    color: #e4e7ea;
+    text-transform: uppercase;
+}
+
+.sidebar-link.active {
+    color:#3a4248;
+    background-color: red;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="messages.css">
+    <link rel="stylesheet" href="notifications.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="header-nav">
+        <div class="header-left">
+            <img class="lccs-logo" src="../images/LCCSLOGO.svg" alt="lccs-logo">
+            <a class="nav-item" href=""> 
+                <img class="menu" src="../Icons/menu.png">
+            </a>
+            <a class="nav-item"> 
+                <img class="home" src="../Icons/home.png">
+            </a>
+            <a class="nav-item-dashboard" href="dashboard.html"> <span class="dashboard-nav">Dashboard</span> </a>
+        </div>    
+        <div class="header-right">
+            <a class="nav-item" href="notifications.html"> 
+                <img class="bell" src="../Icons/bell.png"/>
+            </a>
+              <img class="profile" src="../Icons/admin.png"/> 
+                 <span class="user-nav">Mrs.Zarah Sakanau</span>
+        </div>    
+    </div>
+
+       <div class="app-body">
+
+    <div class="sidebar"> 
+       <span>GENERAL</span>
+            <a class="nav-item" href="dashboard.html">
+        <div class="sidebar-link">
+               <img src="../Icons/dashboard.png">
+               <div>Dashboard</div>
+        </div>
+            </a>
+       <a class="nav-item" href="messages.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/message.png">
+               <div>Messages</div>
+           </div>
+       </a>
+
+       <a class="nav-item" href="notifications.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/bell.png">
+               <div>Notifications</div>
+           </div>
+        </a>
+
+        <a class="nav-item" href="account.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/setting.png">
+               <div>Account</div>
+           </div>
+        </a>
+
+        <a class="nav-item" href="manageuser.html"> 
+            <div class="sidebar-link">
+                <img src="../Icons/management.png">
+                <div>Manage User</div>
+            </div>
+         </a>
+
+        <a class="nav-item" href="#"> 
+            <div class="sidebar-link">
+                <img src="../Icons/logout.png">
+                <div>Logout</div>
+            </div>
+        </a>
+
+    </div>
+
+       </div>
+
+       <script src="sidebar-collapse.js">
+            /* const menuButton = document.querySelector('.menu');
+            const sidebar = document.querySelector('.sidebar');
+
+            menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            }); */
+       </script>
+    </body>
+</html>

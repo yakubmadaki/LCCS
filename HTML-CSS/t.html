@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage User</title>
+  <link rel="stylesheet" href="manageuser.css">
+  <link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="notifications.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+  <div class="header-nav">
+    <div class="header-left">
+        <img class="lccs-logo" src="../images/LCCSLOGO.svg" alt="lccs-logo">
+        <a class="nav-item" href="#"> 
+            <img class="menu" src="../Icons/menu.png">
+        </a>
+        <a class="nav-item" href="#"> 
+            <img class="home" src="../Icons/home.png">
+        </a>
+        <a class="nav-item-dashboard" href="dashboard.html"> <span class="dashboard-nav">Dashboard</span> </a>
+    </div>    
+    <div class="header-right">
+        <a class="nav-item" href="notifications.html"> 
+            <img class="bell" src="../Icons/bell.png"/>
+        </a>
+          <img class="profile" src="../Icons/admin.png"/> 
+             <span class="user-nav">Mrs.Zarah Sakanau</span>
+    </div>    
+</div>
+<div class="app-body">
+    <div class="sidebar"> 
+       <span>GENERAL</span>
+            <a class="nav-item" href="dashboard.html"> 
+        <div class="sidebar-link">
+               <img src="../Icons/dashboard.png">
+               <div>Dashboard</div>
+        </div>
+            </a>
+       <a class="nav-item" href="messages.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/message.png">
+               <div>Messages</div>
+           </div>
+       </a>
+
+       <a class="nav-item" href="notifications.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/bell.png">
+               <div>Notifications</div>
+           </div>
+        </a>
+
+        <a class="nav-item" href="account.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/setting.png">
+               <div>Account</div>
+           </div>
+        </a>
+
+        <a class="nav-item" href="login.html"> 
+            <div class="sidebar-link">
+                <img src="../Icons/logout.png">
+                <div>Logout</div>
+            </div>
+        </a>
+
+    </div>
+    <main class="main">
+        <div class="container">
+
+            <div class="animated-fadein">
+
+                <div class="content-header"></div>
+                
+                       <div class="card-message-box">
+
+                            <div class="card-header">
+                              <h3 class="page-title"> Manage User</h3>
+                            </div>
+                            <div class="card-body">
+                                <div role="tabpanel">
+                                    <ul class="nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a href="#profile" class="nav-link" aria-controls="profile" role="tab" data-toggle="tab" aria-selected="true">Users</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#edit" class="nav-link" aria-controls="edit" role="tab" data-toggle="tab" aria-selected="false" >Create User</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-panel-switch" id="profile">
+                                            <div class="table-responsive">
+                                              <label>Search:<input type="search" class="" placeholder="" aria-controls="myTable"></label>
+                                                <table class="profile-table">
+                                                  <thead>
+                                                    <th>SN</th>
+                                                    <th>Name</th>
+                                                    <th>ID</th>
+                                                    <th>Role</th>
+                                                    <th>Level</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                  </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>1</th>
+                                                            <td>Zarah Sakanau </td>
+                                                            <td>zarahsakana@lccs.com</td>
+                                                            <td>Level Coordinator</td>
+                                                            <td>400L</td>
+                                                            <td><span class="badge">Active</span></td>
+                                                            <td>
+                                                                <label class="switch">
+                                                                  <input type="checkbox">
+                                                                  <span class="slider round"></span>
+                                                                </label>
+                                                              <span class="edit-toggle">
+                                                                <button>
+                                                                  <img src="../Icons/pen.png">
+                                                                </button>
+                                                              </span>
+                                                              <span class="delete-toggle">
+                                                                <button>
+                                                                  <img src="../Icons/delete.png">
+                                                                </button>
+                                                              </span>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                          <th>2</th>
+                                                          <td>Yakubu Suleiman Madaki </td>
+                                                          <td>KASU/20/CSC/2009</td>
+                                                          <td>Student</td>
+                                                          <td>400L</td>
+                                                          <td><span class="badge">Active</span></td>
+                                                          <td>
+                                                              <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                              </label>
+                                                            <span class="edit-toggle">
+                                                              <button>
+                                                                <img src="../Icons/pen.png">
+                                                              </button>
+                                                            </span>
+                                                            <span class="delete-toggle">
+                                                              <button>
+                                                                <img src="../Icons/delete.png">
+                                                              </button>
+                                                            </span>
+                                                          </td>
+                                                      </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-panel-switch" id="edit">
+                                            <form class="form-horizontal" method="post" action="#">
+                                                <input type="hidden" name="-method" id="-method">
+                                                <input type="hidden" name="-token">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="profile-picture">Profile Picture</label>
+                                                            <div class="form-group-prof-pic" id="prof-pic">
+                                                                <input class="form-control" type="file" name="prof-pic" id="prof_pic">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="first_name">First Name</label>
+                                                            <input class="form-control" type="text" name="first_name" id="first_name" placeholder="First Name" maxlength="50"required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="first_name">Last Name</label>
+                                                            <input class="form-control" type="text" name="last_name" id="last_name" placeholder="Last Name" maxlength="50"required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col">
+                                                      <div class="form-group">
+                                                          <label for="first_name">E-mail / Matric No</label>
+                                                          <input class="form-control" type="text" name="last_name" id="last_name" placeholder="E-mail / Matric No" maxlength="50"required>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="gender">Gender</label>
+                                                            <div>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="gender" value="male">Male
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="gender" value="female">Female
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="gender" value="other">Other
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                  <div class="col">
+                                                      <div class="form-group">
+                                                          <label for="gender">Role</label>
+                                                          <div>
+                                                            <label class="radio-inline">
+                                                              <input type="radio" name="role" value="student">Student
+                                                          </label>
+
+                                                              <label class="radio-inline">
+                                                                  <input type="radio" name="role" value="level-coodinator">Level Coodinator
+                                                              </label>
+                                                          </div>
+                                                          <label class="level">Select Level:</label>
+                                                          <select id="level" name="level">
+                                                              <option value="100">100 Level</option>
+                                                              <option value="200">200 Level</option>
+                                                              <option value="300">300 Level</option>
+                                                              <option value="400">400 Level</option>
+                                                          </select>
+
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="create-password">Create Password</label>
+                                                        <input class="form-control" type="password" name="create-password" placeholder="Create Password" required>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="password_confirmation">Password Confirmation</label>
+                                                        <input class="form-control" type="password" name="password_confirmation" id="password_confirmation" placeholder="Password Confirmation" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <button class="update" type="submit">Create</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div role="tabpanel" class="tab-panel-switch" id="password">
+                                            <form class="form-horizontal" method="post" action="#">
+                                                <input type="hidden" name="-method">
+                                                <input type="hidden" name="-token">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="old-password">Old Password</label>
+                                                            <input class="form-control" type="password" name="old-password" placeholder="Old Password" required>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="password">New Password</label>
+                                            
+                                                            <input class="form-control" type="password" name="password" id="password" placeholder="New Password" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="password_confirmation">Password Confirmation</label>
+                                                            <input class="form-control" type="password" name="password_confirmation" id="password_confirmation" placeholder="Password Confirmation" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <button class="btn" type="submit">Update Password</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script>
+    const tabLinks = document.querySelectorAll('.nav-link');
+    const contentPanels = document.querySelectorAll('.tab-panel-switch');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor tag behavior
+
+            const panelId = link.getAttribute('href').slice(1); // Get the target panel ID
+            const targetPanel = document.getElementById(panelId);
+
+            contentPanels.forEach(panel => panel.classList.remove('active')); // Hide all panels
+            targetPanel.classList.add('active'); // Show the clicked panel
+        });
+    });
+</script>
+<script src="sidebar-collapse.js"></script>
+  
+</body>
+</html>

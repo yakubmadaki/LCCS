@@ -1,0 +1,102 @@
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .general-message img{
+  height: 20px;
+  display: flex;
+  position:relative;
+}
+
+.modal{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  max-width: 100%;
+}
+
+.gm-message{
+  padding: 30px 15px 0 15px;
+}
+
+.heading{
+  background-color: #2f353a;
+  padding: 10px 29px 10px 20px;
+  height: 55px;
+  border-bottom: 1px solid #c4c4c4;
+  color: #fff;
+  justify-content: center;
+  font-weight: 700;
+}
+.close-me{
+  position: absolute;
+  top: 110px;
+  left: 370px;
+}
+.gm-text{
+  position: relative;
+}
+
+.close-me button{
+  border: 0;
+  border-radius: 2px;
+}
+.close-me button:hover{
+  cursor:pointer;
+}
+.gm-message .general-message-history{
+  height: 450px;
+  overflow-y: auto;
+}
+
+.general-message{
+  border-top: 1px solid #c4c4c4;
+  position: relative;
+  
+  
+}
+
+.general-message textarea{
+  background: transparent none repeat scroll 0 0;
+  width: 100%;
+  resize: none;
+  border: medium none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  font-family: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.general-message .message-send-btn {
+  background: #05728f none repeat scroll 0 0;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 33px;
+}
+
+.general-message .message-send-btn img{
+  height: 20px;
+  position: relative;
+  top: 1px;
+  right: 0;
+  filter: invert(99%) sepia(0%) saturate(2159%) hue-rotate(239deg) brightness(112%) contrast(100%);
+}

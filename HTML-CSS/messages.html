@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="messages.css">
+    <link rel="stylesheet" href="general.css">
+   
+</head>
+<body>
+    <div class="header-nav">
+        <div class="header-left">
+            <img class="lccs-logo" src="../images/LCCSLOGO.svg" alt="lccs-logo">
+            <a class="nav-item" href="#"> 
+                <img class="menu" src="../Icons/menu.png">
+            </a>
+            <a class="nav-item" href="#"> 
+                <img class="home" src="../Icons/home.png">
+            </a>
+            <a class="nav-item-dashboard" href="dashboard.html"> <span class="dashboard-nav">Dashboard</span> </a>
+        </div>    
+        <div class="header-right">
+            <a class="nav-item" href="notifications.html"> 
+                <img class="bell" src="../Icons/bell.png"/>
+            </a>
+              <img class="profile" src="../Icons/admin.png"/> 
+                 <span class="user-nav">Mrs.Zarah Sakanau</span>
+        </div>    
+    </div>
+    <div class="app-body">
+    <div class="sidebar"> 
+       <span>GENERAL</span>
+            <a class="nav-item" href="dashboard.html"> 
+        <div class="sidebar-link">
+               <img src="../Icons/dashboard.png">
+               <div>Dashboard</div>
+        </div>
+            </a>
+       <a class="nav-item" href="messages.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/message.png">
+               <div>Messages</div>
+           </div>
+       </a>
+
+       <a class="nav-item" href="notifications.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/bell.png">
+               <div>Notifications</div>
+           </div>
+        </a>
+
+        <a class="nav-item" href="account.html"> 
+           <div class="sidebar-link">
+               <img src="../Icons/setting.png">
+               <div>Account</div>
+           </div>
+        </a>
+
+        <a class="nav-item" href="#"> 
+            <div class="sidebar-link">
+                <img src="../Icons/logout.png">
+                <div>Logout</div>
+            </div>
+        </a>
+
+    </div>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="animated-fadein">
+
+                <div class="content-header"></div>
+                
+                 <div class="card-message-box">
+
+                      <div class="card-header">
+                        <h3 class="page-title">Messages</h3>
+                     </div>
+
+                        <div class="card-body">
+                            <div class="messaging">
+                                <div class="inbox-msg">
+                                    <div class="inbox-people">
+                                        <div class="heading-search">
+                                            <div class="search-bar">
+                                                <div claa="input-group">
+                                                    <input type="search" class="input-search-bar" placeholder="Search User">
+                                                    <button type="button" class="btn-search">
+                                                        <img class="input-search-icon" src="../Icons/search.png">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="gm">
+                                                    <button>
+                                                    <img src="../Icons/broadcast.png">
+                                                    </button>
+                                                    <div class="modal-container">
+                                                        <div class="modal">
+                                                            <div class="heading">
+                                                                <div class="close-me"><button>x</button></div>
+                                                                <div class="gm-text"> <p>Send a general message</p> </div>
+                                                            </div>
+                                                            <div class="gm-message">
+                                                                <div class="general-message-history">
+           
+                                                                </div>
+                                                                <div class="general-message">
+                                                                    <textarea type="text" placeholder="Type a message"></textarea>
+                                                                    <button class="message-send-btn" type="submit">
+                                                                        <img src="../Icons/send.png">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                        </div>
+                                        <div class="inbox-chat">
+                                        <!---    <a class="list-content" href="#">
+                                                <div class="chat-people">
+                                                    <h5>KASU/20/CSC/2009
+                                                        <span class="chat-date"> 10 seconds ago</span>
+                                                    </h5>
+                                                    <h6>Yakubu Suleiman Madaki</h6>
+                                                    <p>Come along with your green file...</p>
+                                                </div>
+                                            </a>
+                                            <a class="list-content" href="#">
+                                                <div class="chat-people">
+                                                    <h5>KASU/19/CSC/1111
+                                                        <span class="chat-date"> 10 seconds ago</span>
+                                                    </h5>
+                                                    <h6>Umar Salihu</h6>
+                                                    <p>Come along with your green file...</p>
+                                                </div>
+                                            </a>
+                                            <a class="list-content" href="#">
+                                                <div class="chat-people">
+                                                    <h5>KASU/19/CSC/1112
+                                                        <span class="chat-date"> 10 seconds ago</span>
+                                                    </h5>
+                                                    <h6>Khadija Isa</h6>
+                                                    <p>Come along with your green file...</p>
+                                                </div>
+                                            </a>
+                                            <a class="list-content" href="#">
+                                                <div class="chat-people">
+                                                    <h5>KASU/19/CSC/1113
+                                                        <span class="chat-date"> 10 seconds ago</span>
+                                                    </h5>
+                                                    <h6>Fauziya Suleiman</h6>
+                                                    <p>Come along with your green file...</p>
+                                                </div>
+                                            </a> -->
+                                        </div>
+                                    </div>
+                                    <form method="post" action="#">
+                                        <input type="hidden" name="token" value="#">
+                                        <div class="heading-select-search">
+                                            <div class="chat-people-header">
+                                                <div class="select-hearder-text">
+                                                    <p class="select-recipients-text"> Select Recipients:</p>
+                                                </div>
+                                                <div class="selected-p">
+                                                    <select class="select-form-control" multiple name="recipients"></select>
+                                                    <span class="select-container">
+                                                        <span class="selection">
+                                                            <span class="select-selection" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                                <ul class="select-selection-rendered">
+                                                                    <li class="select-search">
+                                                                        <input class="select-search-field" type="search" tabindex="0" autocomplete="on" role="textbox" aria-autocomplete="list">
+                                                                    </li>
+                                                                </ul>
+                                                            </span>
+                                                        </span>
+
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messages">
+                                            <div class="message-history">
+                                                <!--incoming message-->
+                                               <!-- <div class="incoming-msg">
+                                                    <div class="incoming-msg-img">
+                                                        <img src="../Icons/admin.png">
+                                                    </div>
+                                                    <div class="received-msg">
+                                                        <div class="received-width-message">
+                                                            <p>Hello</p>
+                                                            <span class="time-date">10:20 AM | Jul 29 2024</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="outgoing-msg>">
+                                                    <div class="sent- width-msg">
+                                                        <p>Come along with your Green file and make sure you're there on time, else you won't get to see me till next week.</p>
+                                                        <span class="time-date-right">
+                                                            11:10 AM | Jul 29 2024
+                                                        </span>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="type-message">
+                                                <div class="input-message-write">
+                                                    <textarea type="text" name="message" class="write-message" placeholder="Type a message"></textarea>
+                                                    <button class="message-send-btn" type="submit">
+                                                        <img src="../Icons/send.png">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                         </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    </div>
+    <script src="messages.js"></script>
+    <script src="sidebar-collapse.js"></script>
+    <script src="modal.js"></script>
+    </body>
+</html>
