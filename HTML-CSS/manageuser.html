@@ -182,50 +182,112 @@
                                             </div>
                                         </div>
                                         <div role="tabpanel" class="tab-panel-switch" id="edit">
-                                            <form id="userForm" class="form-horizontal">
-                                                <div class="form-group">
-                                                  <label for="first_name">First Name</label>
-                                                  <input type="text" name="first_name" id="first_name" required>
+                                            <form id="second-form" class="form-horizontal" method="post" action="#">
+                                                <input type="hidden" name="-method" id="-method">
+                                                <input type="hidden" name="-token">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="profile-picture">Profile Picture</label>
+                                                            <div class="form-group-prof-pic" id="prof-pic">
+                                                                <input class="form-control" type="file" name="prof-pic" id="prof_pic">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                  <label for="last_name">Last Name</label>
-                                                  <input type="text" name="last_name" id="last_name" required>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="first_name">First Name</label>
+                                                            <input class="form-control" type="text" name="first_name" id="first_name" placeholder="First Name" maxlength="50"required>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                  <label for="email">E-mail / Matric No</label>
-                                                  <input type="text" name="email" id="email" required>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="first_name">Last Name</label>
+                                                            <input class="form-control" type="text" name="last_name" id="last_name" placeholder="Last Name" maxlength="50"required>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                  <label>Gender</label>
-                                                  <label><input type="radio" name="gender" value="male"> Male</label>
-                                                  <label><input type="radio" name="gender" value="female"> Female</label>
+                                                <div class="row">
+                                                  <div class="col">
+                                                      <div class="form-group">
+                                                          <label for="first_name">E-mail / Matric No</label>
+                                                          <input class="form-control" type="text" name="last_name" id="last_name" placeholder="E-mail / Matric No" maxlength="50"required>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="gender">Gender</label>
+                                                            <div>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="gender" value="male">Male
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="gender" value="female">Female
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="gender" value="other">Other
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                  <label>Role</label>
-                                                  <label><input type="radio" name="role" value="student"> Student</label>
-                                                  <label><input type="radio" name="role" value="level-coordinator"> Level Coordinator</label>
+
+                                                <div class="row">
+                                                  <div class="col">
+                                                      <div class="form-group">
+                                                          <label for="gender">Role</label>
+                                                          <div>
+                                                            <label class="radio-inline">
+                                                              <input type="radio" name="role" value="student">Student
+                                                          </label>
+
+                                                              <label class="radio-inline">
+                                                                  <input type="radio" name="role" value="level-coodinator">Level Coodinator
+                                                              </label>
+                                                          </div>
+                                                          <label class="level">Select Level:</label>
+                                                          <select id="level" name="level">
+                                                              <option value="100">100 Level</option>
+                                                              <option value="200">200 Level</option>
+                                                              <option value="300">300 Level</option>
+                                                              <option value="400">400 Level</option>
+                                                          </select>
+
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="create-password">Create Password</label>
+                                                        <input class="form-control" type="password" name="create-password" placeholder="Create Password" required>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                  <label for="level">Select Level:</label>
-                                                  <select id="level" name="level">
-                                                    <option value="100">100 Level</option>
-                                                    <option value="200">200 Level</option>
-                                                    <option value="300">300 Level</option>
-                                                    <option value="400">400 Level</option>
-                                                  </select>
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="password_confirmation">Password Confirmation</label>
+                                                        <input class="form-control" type="password" name="password_confirmation" id="password_confirmation" placeholder="Password Confirmation" required>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                  <label for="password">Create Password</label>
-                                                  <input type="password" name="password" id="password" required>
+                                            </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <button class="update" type="submit">Create</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                  <label for="password_confirmation">Confirm Password</label>
-                                                  <input type="password" name="password_confirmation" id="password_confirmation" required>
-                                                </div>
-                                                <div class="form-group">
-                                                  <button type="submit">Create</button>
-                                                </div>
-                                              </form>
+                                            </form>
                                         </div>
                                         <div role="tabpanel" class="tab-panel-switch" id="password">
                                             <form id="forms" class="form-horizontal" method="post" action="#">
@@ -321,7 +383,7 @@ function handleSubmit(e) {
     e.preventDefault()
 }
 // Get forms
-document.getElementById("userForm").addEventListener("submit", async function(event) {
+ document.getElementById("userForm").addEventListener("submit", async function(event) {
       event.preventDefault();
       
       const formData = new FormData(this);
